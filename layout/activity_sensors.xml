@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Sensors">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff6800"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="REALTIME DATA MONITORING"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+
+            <RelativeLayout
+                android:id="@+id/analysis1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_1"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/image1" />
+
+                <TextView
+                    android:id="@+id/field_text_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/field_img_1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Vehicle Gyroscope X axix"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_1"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_1"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_2"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/image2" />
+
+                <TextView
+                    android:id="@+id/field_text_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/field_img_2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Vehicle Gyroscope Y axix"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_2"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_2"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_3"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/image3" />
+
+                <TextView
+                    android:id="@+id/field_text_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/field_img_3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Vehicle Gyroscope Z axis"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_3"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_3"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_4"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/engine1" />
+
+                <TextView
+                    android:id="@+id/field_text_4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toRightOf="@id/field_img_4"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Engine Vibration SW-420"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_4"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_4"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_5"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/engine2" />
+
+                <TextView
+                    android:id="@+id/field_text_5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/field_img_5"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Engine Temperature"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_5"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_5"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/analysis6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_6"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/accident" />
+
+                <TextView
+                    android:id="@+id/field_text_6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/field_img_6"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Vehicle Accident Alert"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_6"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_6"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/analysis7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_7"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/surr1" />
+
+                <TextView
+                    android:id="@+id/field_text_7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/field_img_7"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Surrounding Humidity"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_7"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_7"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/analysis8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/bg_icons"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/field_img_8"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/surr2" />
+
+                <TextView
+                    android:id="@+id/field_text_8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/field_img_8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingTop="30dp"
+                    android:text="Surrounding Temperature"
+                    android:textColor="@color/black"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/field_text_8"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@id/field_img_8"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center"
+                    android:paddingBottom="20dp"
+                    android:text="Explore the Data 🟢"
+                    android:textColor="@color/black"
+                    android:textSize="14dp" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".NoData">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:background="#ff6800"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="REALTIME VEHICLE MONITOR"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:id="@+id/text"
+        android:layout_centerVertical="true"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="NO USER SENSOR DATA FOUND "
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_below="@id/text"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/register"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        android:text="GO TO LOGIN PAGE"
+        android:textColor="@color/white"
+        android:fontFamily="sans-serif"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:background="#ff6800"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"/>
+</RelativeLayout>

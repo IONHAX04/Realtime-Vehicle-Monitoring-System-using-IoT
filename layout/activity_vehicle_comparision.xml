@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".VehicleComparision">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:background="#ff6800"
+        android:padding="10dp"
+        android:gravity="center"
+        android:elevation="5dp"
+        android:layout_centerHorizontal="true"
+        android:text="REALTIME VEHICLE MONITOR"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header"
+        android:fontFamily="sans-serif"
+        android:layout_margin="15dp"
+        android:layout_centerHorizontal="true"
+        android:text="COMPARISION WITH E-VEHICLE"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_below="@id/heading"
+        android:id="@+id/tables"
+        android:layout_height="wrap_content">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="1"
+            android:layout_margin="10dp"
+            android:id="@+id/table_neet">
+            <TableRow>
+                <TextView
+                    android:text="Vehicle Name"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:background="@drawable/state_bg"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="Honda SP 125"
+                    android:padding="10dp"
+                    android:background="@drawable/state_bg"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="E- Bike"
+                    android:padding="10dp"
+                    android:background="@drawable/state_bg"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Health Condition"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="97.9 %"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="98.9 %"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:textSize="15dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Range per charge"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:textStyle="bold"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="45-60 km per lit"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/table_bg"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="60-70 km per charge"
+                    android:padding="10dp"
+                    android:gravity="center_horizontal"
+                    android:fontFamily="sans-serif"
+                    android:background="@drawable/table_bg"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Maintenance cost"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="Rs 14,000"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="Rs 3,000"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:text="Battery Cost"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="Rs 0"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="Rs 18,000"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+            </TableRow>
+            <TableRow>
+                <TextView
+                    android:text="Units / Liters consumed"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="720 liters of petrol"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:text="612 Charges (730 units)"
+                    android:padding="10dp"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:background="@drawable/table_bg"
+                    android:gravity="center_horizontal"
+                    android:textSize="15dp"/>
+            </TableRow>
+        </TableLayout>
+    </HorizontalScrollView>
+
+
+
+
+</RelativeLayout>

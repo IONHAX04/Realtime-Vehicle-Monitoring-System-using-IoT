@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Vehicles">
+
+    <TextView
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:background="#ff6800"
+        android:elevation="5dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="REALTIME VEHICLE MONITOR"
+        android:textColor="@color/white"
+        android:textSize="24dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_below="@id/header"
+        android:background="@drawable/bg_icons"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp"
+        android:elevation="4dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="15dp"
+            android:fontFamily="sans-serif"
+            android:text="VEHICLE REPORT"
+            android:textColor="#ff6800"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <HorizontalScrollView
+            android:id="@+id/tables"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/heading">
+
+            <TableLayout
+                android:id="@+id/table_neet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:stretchColumns="1">
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/state_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Vehicle Name"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/state_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Honda SP 125"
+                        android:textColor="@color/white"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Green Vehicle Rating"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="🟢🟢🟢🟢🔘"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Vehicle Type"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Bike"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Fuel Type"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Petrol"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Speed (kmph)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="40-55 (Avg)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Range (km)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="40-75"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="Total Health Damage"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0.78 (Per Km)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="CDC * (Per km)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0.02"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="CDC per year"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="249.49"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="TCO * (Per km)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0.92"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="RCO * (Per km)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:background="@drawable/table_bg"
+                        android:fontFamily="sans-serif"
+                        android:gravity="center_horizontal"
+                        android:padding="10dp"
+                        android:text="0.94 (TCO + CDC)"
+                        android:textColor="#ff6800"
+                        android:textSize="15dp" />
+                </TableRow>
+            </TableLayout>
+        </HorizontalScrollView>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

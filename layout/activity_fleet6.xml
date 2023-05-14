@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="30dp"
+    tools:context=".Fleet6">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bg_icons">
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:text="VEHICLE ACCIDENT ALERT"
+            android:textColor="#ff6800"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/chart1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/heading"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_icons"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <WebView
+                android:id="@+id/web_field1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/field_text_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="FIELD 6 CHART"
+                android:textColor="#ff6800"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/number1"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/chart1"
+            android:layout_margin="10dp"
+            android:background="@drawable/bg_icons"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <WebView
+                android:id="@+id/number_field1"
+                android:layout_width="match_parent"
+                android:layout_height="250dp" />
+
+            <TextView
+                android:id="@+id/field_number_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:fontFamily="sans-serif"
+                android:gravity="center"
+                android:text="FIELD 6 NUMERIC DISPLAY"
+                android:textColor="#ff6800"
+                android:textSize="14dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

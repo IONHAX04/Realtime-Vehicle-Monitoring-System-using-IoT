@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_sensors"
+            android:icon="@drawable/sensors"
+            android:title="Home"/>
+        <item
+            android:id="@+id/nav_vehicle"
+            android:icon="@drawable/cars"
+            android:title="Vehicle" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/location"
+            android:title="Geofencing" />
+        <item
+            android:id="@+id/nav_health"
+            android:icon="@drawable/health"
+            android:title="Health" />
+        <item
+            android:id="@+id/nav_fleet"
+            android:icon="@drawable/fleet"
+            android:title="Fleet Analysis" />
+        <item
+            android:id="@+id/nav_payment"
+            android:icon="@drawable/payment"
+            android:title="Payment" />
+
+
+        <item
+            android:id="@+id/nav_support"
+            android:icon="@drawable/help"
+            android:title="Support and Help" />
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:title="Logout" />
+    </group>
+
+
+
+</menu>
